@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dantas Engenharia e Projetos. Projetos de engenharia em Itapeva-SP. Entre em contato para conversar sobre seu projeto.">
+  <meta name="theme-color" content="#111111">
+  <title>Dantas Engenharia e Projetos | Itapeva-SP</title>
+  <style>
+    :root { --bg:#101010; --panel:#181818; --gold:#c9a45c; --gold-light:#e6cb8d; --text:#f7f4ee; --muted:#c0bbb1; --line:#39352d; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--bg); color:var(--text); font-family:Arial,Helvetica,sans-serif; line-height:1.6; }
+    a { color:inherit; }
+    .wrap { width:min(1120px, calc(100% - 40px)); margin:auto; }
+    header { border-bottom:1px solid var(--line); background:rgba(16,16,16,.96); }
+    .nav { min-height:82px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { display:flex; align-items:center; gap:12px; text-decoration:none; }
+    .mark { width:43px; height:43px; border:1px solid var(--gold); color:var(--gold-light); display:grid; place-items:center; font-weight:700; letter-spacing:1px; }
+    .brand strong { display:block; letter-spacing:1.2px; font-size:14px; }
+    .brand small { display:block; color:var(--muted); letter-spacing:2px; font-size:10px; margin-top:3px; }
+    nav { display:flex; gap:24px; align-items:center; }
+    nav a { color:var(--muted); text-decoration:none; font-size:13px; }
+    nav a:hover { color:var(--gold-light); }
+    .button { display:inline-flex; align-items:center; justify-content:center; gap:9px; background:var(--gold); color:#15120c; padding:13px 19px; border-radius:2px; font-weight:700; text-decoration:none; border:1px solid var(--gold); transition:.2s; }
+    .button:hover { background:var(--gold-light); border-color:var(--gold-light); }
+    .button-outline { background:transparent; color:var(--gold-light); }
+    .hero { padding:94px 0 88px; background:radial-gradient(ellipse at 75% 40%, rgba(201,164,92,.13), transparent 42%); }
+    .eyebrow { color:var(--gold-light); text-transform:uppercase; letter-spacing:3px; font-size:11px; font-weight:700; }
+    h1 { font-size:clamp(38px, 6vw, 68px); line-height:1.08; letter-spacing:-1.8px; max-width:760px; margin:19px 0 22px; }
+    h1 span { color:var(--gold-light); }
+    .lead { color:var(--muted); font-size:18px; max-width:630px; margin:0 0 30px; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; }
+    .hero-note { margin-top:42px; color:#8f897e; font-size:12px; border-top:1px solid var(--line); padding-top:18px; max-width:630px; }
+    section { padding:76px 0; }
+    .section-head { max-width:690px; margin-bottom:32px; }
+    h2 { font-size:clamp(28px, 4vw, 42px); line-height:1.15; margin:12px 0 15px; letter-spacing:-.7px; }
+    .section-head p, .copy { color:var(--muted); }
+    .service-card { background:var(--panel); border:1px solid var(--line); padding:30px; max-width:720px; }
+    .service-icon { color:var(--gold-light); font-size:27px; margin-bottom:18px; }
+    .service-card h3 { margin:0 0 10px; font-size:22px; }
+    .service-card p { color:var(--muted); margin:0; }
+    .approach { background:#151515; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+    .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .step { padding:23px; border-top:1px solid var(--gold); background:#191919; }
+    .step b { color:var(--gold-light); font-size:12px; letter-spacing:2px; }
+    .step h3 { margin:12px 0 8px; font-size:18px; }
+    .step p { margin:0; color:var(--muted); font-size:14px; }
+    .contact-panel { display:flex; justify-content:space-between; align-items:center; gap:28px; padding:34px; border:1px solid var(--line); background:linear-gradient(120deg,#1c1a16,#171717); }
+    .contact-panel p { color:var(--muted); margin-bottom:0; }
+    footer { padding:25px 0; border-top:1px solid var(--line); color:#aaa398; font-size:12px; }
+    footer .foot { display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+    .disclaimer { font-size:12px; color:#999286; margin-top:18px; }
+    @media (max-width:720px) {
+      .nav { padding:15px 0; align-items:flex-start; flex-direction:column; }
+      nav { gap:15px; flex-wrap:wrap; }
+      .hero { padding:66px 0 60px; }
+      section { padding:56px 0; }
+      .steps { grid-template-columns:1fr; }
+      .contact-panel { flex-direction:column; align-items:flex-start; padding:25px; }
+      .lead { font-size:16px; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#inicio" aria-label="Dantas Engenharia e Projetos - início">
+      <span class="mark">D</span>
+      <span><strong>DANTAS</strong><small>ENGENHARIA E PROJETOS</small></span>
+    </a>
+    <nav aria-label="Navegação principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#metodo">Como trabalhamos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="wrap">
+      <div class="eyebrow">Engenharia • Itapeva – SP</div>
+      <h1>Projetos bem pensados.<br><span>Decisões com confiança.</span></h1>
+      <p class="lead">A Dantas Engenharia e Projetos está aqui para conversar sobre sua necessidade e entender como um projeto de engenharia pode ajudar a transformar sua ideia em um plano claro.</p>
+      <div class="actions">
+        <!-- Configure o link do WhatsApp antes de publicar. Veja o arquivo LEIA-ME. -->
+        <a class="button" href="#contato">Fale com a empresa <span aria-hidden="true">↗</span></a>
+        <a class="button button-outline" href="#servicos">Conheça o serviço</a>
+      </div>
+      <p class="hero-note">Atendimento em Itapeva-SP. Para confirmar escopo, disponibilidade e condições, entre em contato.</p>
+    </div>
+  </section>
+
+  <section id="servicos">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">O que fazemos</div>
+        <h2>Projetos de engenharia</h2>
+        <p>Um bom projeto começa com uma conversa clara sobre o objetivo, as necessidades e as características de cada caso.</p>
+      </div>
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">⌁</div>
+        <h3>Projetos de engenharia</h3>
+        <p>Entre em contato para apresentar sua ideia e explicar o que precisa. A empresa poderá avaliar as informações iniciais e orientar os próximos passos, conforme o serviço solicitado e as atribuições profissionais aplicáveis.</p>
+      </article>
+      <p class="disclaimer">Os serviços específicos, prazos e condições devem ser confirmados diretamente com a empresa antes da contratação.</p>
+    </div>
+  </section>
+
+  <section class="approach" id="metodo">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Nosso processo</div>
+        <h2>Clareza em cada etapa</h2>
+        <p>Uma forma simples de iniciar o atendimento e entender o que seu projeto precisa.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><b>01 / CONVERSA</b><h3>Conte sua necessidade</h3><p>Explique sua ideia, o local e o objetivo do projeto.</p></div>
+        <div class="step"><b>02 / AVALIAÇÃO</b><h3>Entenda as possibilidades</h3><p>As informações são analisadas para definir o escopo adequado, quando aplicável.</p></div>
+        <div class="step"><b>03 / PRÓXIMOS PASSOS</b><h3>Combine o atendimento</h3><p>Confirme entregas, prazos e condições antes de iniciar o serviço.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="wrap">
+      <div class="contact-panel">
+        <div>
+          <div class="eyebrow">Vamos conversar</div>
+          <h2>Tem um projeto em mente?</h2>
+          <p>Entre em contato com a Dantas Engenharia e Projetos.</p>
+          <p>Itapeva – São Paulo</p>
+        </div>
+        <!-- SUBSTITUA o href abaixo pelo link oficial do WhatsApp antes de publicar. -->
+        <a class="button" href="https://wa.me/55DDDNÚMERO" target="_blank" rel="noopener noreferrer">Conversar pelo WhatsApp ↗</a>
+      </div>
+      <p class="disclaimer">Importante: substitua o link de exemplo do WhatsApp pelo número comercial correto antes de publicar o site.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="year">2026</span> Dantas Engenharia e Projetos</span>
+    <span>Itapeva – SP</span>
+  </div>
+</footer>
+</body>
+</html>
